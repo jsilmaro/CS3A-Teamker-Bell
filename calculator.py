@@ -8,14 +8,18 @@ def subtract(a, b):
     """Subtract two numbers"""
     return a - b
 
+def multiply(a, b):
+    """Multiply two numbers"""
+    return a * b
+
 def main():
     """Main calculator loop"""
     print("=== Simple Calculator ===")
-    print("Available operations: add, subtract")
+    print("Available operations: add, subtract, multiply")
     print("Type 'quit' to exit")
 
     while True:
-        operation = input("\nEnter operation (add/subtract/quit): ").lower()
+        operation = input("\nEnter operation (add/subtract/multiply/quit): ").lower()
 
         if operation == 'quit':
             print("Goodbye!")
@@ -34,6 +38,14 @@ def main():
                 num2 = float(input("Enter the second number: "))
                 result = subtract(num1, num2)
                 print(f"Result: {num1} - {num2} = {result}")
+            except ValueError:
+                print("Please enter valid numbers!")
+        elif operation == 'multiply':
+            try:
+                num1 = float(input("Enter the first number: "))
+                num2 = float(input("Enter the second number: "))
+                result = multiply(num1, num2)
+                print(f"Result: {num1} × {num2} = {result}")
             except ValueError:
                 print("Please enter valid numbers!")
         else:
