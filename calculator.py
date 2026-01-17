@@ -12,14 +12,20 @@ def multiply(a, b):
     """Multiply two numbers"""
     return a * b
 
+def divide(a, b):
+    """Divide two numbers"""
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by zero")
+    return a / b
+
 def main():
     """Main calculator loop"""
     print("=== Simple Calculator ===")
-    print("Available operations: add, subtract, multiply")
+    print("Available operations: add, subtract, multiply, divide")
     print("Type 'quit' to exit")
 
     while True:
-        operation = input("\nEnter operation (add/subtract/multiply/quit): ").lower()
+        operation = input("\nEnter operation (add/subtract/multiply/divide/quit): ").lower()
 
         if operation == 'quit':
             print("Goodbye!")
@@ -48,6 +54,16 @@ def main():
                 print(f"Result: {num1} × {num2} = {result}")
             except ValueError:
                 print("Please enter valid numbers!")
+        elif operation == 'divide':
+            try:
+                num1 = float(input("Enter first number: "))
+                num2 = float(input("Enter second number: "))
+                result = divide(num1, num2)
+                print(f"Result: {num1} / {num2} = {result}")
+            except ValueError:
+                print("Please enter valid numbers!")
+            except ZeroDivisionError:
+                print("Error: Cannot divide by zero!")
         else:
             print("Unknown operation!")
 
