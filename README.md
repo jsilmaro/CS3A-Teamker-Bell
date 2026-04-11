@@ -1,5 +1,3 @@
-# Restaurant Cost Control System
-
 ## 👩‍💻 Team Members
 
 <table>
