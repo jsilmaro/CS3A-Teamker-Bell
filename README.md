@@ -1,5 +1,5 @@
 
-## 👩‍💻 Team Members
+## 👩‍💻 Teamker Bell Members
 
 <table>
 <tr>
@@ -25,7 +25,7 @@
 <td align="center">
 <img src="img/jeranch.jpg" width="150"><br>
 <b>Jeranch Quibra</b><br>
-<a href="https://github.com/pretendre12">https://github.com/pretendre12</a>
+<a href="https://github.com/pretendre12">pretendre12</a>
 </td>
 
 </tr>
