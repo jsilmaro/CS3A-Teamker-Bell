@@ -30,6 +30,8 @@ small workloads. Parallelism becomes beneficial only when the computational work
 
 🪻 Janelle – Parallel Searching Algorithm
 
-For the parallel searching algorithm, I ...
+For the parallel searching algorithm, I used a multiprocessing linear search that split the dataset into smaller pieces and had different processes search them at the same time. Instead of checking elements one by one like a sequential search, each process worked on its own segment. I tried it out on a randomly generated dataset with 100,000 elements, and it found the target correctly while keeping the global index right. It was hard to make sure that the right index was returned by coordinating results between processes.
+
+Overall, parallel searching made performance better on larger datasets by using more CPU cores. However, it also added overhead from creating and syncing processes, which made it less efficient for smaller inputs.
 
 
