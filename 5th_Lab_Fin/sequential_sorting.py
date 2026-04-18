@@ -16,7 +16,7 @@ def sequential_bubble_sort(data):
     return data
 
 # Dataset Generation
-N = 1000 # 1000, 100000, 1000000
+N = 100000 # 1000, 100000, 1000000
 data = [random.randint(1, 1000000) for _ in range(N)]
 
 print(f"Sorting {N} elements sequentially...\n")
