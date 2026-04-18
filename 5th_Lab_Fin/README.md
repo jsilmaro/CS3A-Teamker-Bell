@@ -2,7 +2,7 @@
 
 
 
-Sequential_searching:
+Sequential_searching: by Jeranch Quibra
 
 ​I implemented a sequential binary search to serve as the baseline for our performance testing.
 Since this is a sequential algorithm it operates on a single control flow. It executes one operation 
