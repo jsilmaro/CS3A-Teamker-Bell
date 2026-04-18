@@ -30,9 +30,12 @@ def sequential_merge_sort(data):
 N = 1000 # 1000, 100000, 1000000
 data = [random.randint(1, 1000000) for _ in range(N)]
 
+print(f"Sorting {N} elements sequentially...\n")
+
 # Performance Measurement
 start = time.time()
 sorted_data = sequential_merge_sort(data)
 end = time.time()
 
+print(f"Sorted Array (first 10): {sorted_data[:N]}\n")
 print(f"Time taken (Sequential Merge Sort): {end - start:.6f} seconds")
