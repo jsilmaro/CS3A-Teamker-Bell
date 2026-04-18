@@ -27,7 +27,7 @@ def sequential_merge_sort(data):
     return merge(left, right)
 
 # Dataset Generation
-N = 1000
+N = 1000 # 1000, 100000, 1000000
 data = [random.randint(1, 1000000) for _ in range(N)]
 
 # Performance Measurement
