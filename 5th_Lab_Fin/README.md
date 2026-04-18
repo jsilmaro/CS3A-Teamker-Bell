@@ -10,8 +10,9 @@ From this task, I learned that even within sequential execution, choosing an eff
 
 🤍 Hannah – Parallel Sorting Algorithm
 
-For this part, I implemented a parallel sorting algorithm by ...
+For this part, I implemented a parallel sorting algorithm by utilizing multiple processes. The dataset was divided into smaller chunks, and each chunk was sorted independently using separate processes. After all chunks were sorted, the results were merged to produce a single fully sorted output.
 
+From this task, I learned that even in sequential execution, selecting an efficient algorithm such as Merge Sort significantly improves performance and scalability. I also observed that while execution time naturally grows with dataset size, a well-designed algorithm can still handle large inputs effectively without excessive performance degradation.
 
 👤 Jeranch – Sequential Searching Algorithm
 
