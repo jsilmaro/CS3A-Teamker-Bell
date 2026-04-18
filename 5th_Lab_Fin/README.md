@@ -1,9 +1,11 @@
 📄 Reflection and Analysis
 🌼 Charesh – Sequential Sorting Algorithm
 
-In this task, I implemented a sequential sorting algorithm, where the data is processed step by step using a single control flow. Among the three dataset sizes, I observed that sequential sorting performs efficiently on small datasets due to its low overhead and straightforward execution. When testing with a small dataset of 1,000 elements, the algorithm performed efficiently and completed the sorting in 0.042834 seconds, producing a correctly sorted output. However, when I attempted to run the algorithm on a medium dataset of 100,000 elements, the program became extremely slow and has been stuck during execution. Because of this limitation, I was unable to proceed with testing the large dataset of 1,000,000 elements.
+In this task, I implemented a sequential sorting algorithm using Merge Sort, which follows a divide-and-conquer approach. The algorithm recursively splits the dataset into smaller parts, sorts them, and then merges them back together into a fully sorted list. When tested with a small dataset of 1,000 elements, the algorithm performed very efficiently, completing the sorting in 0.001658 seconds while producing a correct and fully sorted output.
 
-One challenge I encountered was dealing with the long execution time for larger inputs, which made it difficult to fully evaluate performance across all dataset sizes. In this activity, I learned that while sequential sorting is reliable and efficient for small datasets, it becomes impractical for larger workloads due to its lack of scalability and increasing execution time.
+As the dataset size increased, the execution time also increased, but remained manageable due to the efficiency of Merge Sort. For a medium dataset of 100,000 elements, the algorithm completed in 0.305667 seconds, and for a large dataset of 1,000,000 elements, it took 4.857920 seconds.
+
+From this task, I learned that even within sequential execution, choosing an efficient algorithm like Merge Sort significantly improves performance and scalability.
 
 
 🤍 Hannah – Parallel Sorting Algorithm
