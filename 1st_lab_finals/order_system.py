@@ -1,6 +1,6 @@
 from mpi4py import MPI
 import time
-from multiprocessing import Manager, Lock
+from multiprocessing import Manager, Lock, Process
 
 def run_worker(rank, size, shared_orders, lock):
     comm = MPI.COMM_WORLD
